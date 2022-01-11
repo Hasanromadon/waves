@@ -11,6 +11,9 @@ const grantsObject = {
   admin: {
     profile: allRights,
     brand: allRights,
+    product: allRights,
+    site: allRights,
+    transaction: allRights,
   },
   user: {
     profile: {
@@ -18,6 +21,8 @@ const grantsObject = {
       'update:own': ['*'],
     },
     brand: { 'read:any': ['*'] },
+    product: { 'read:any': ['*'] },
+    transaction: { 'create:any': ['*'], 'read:any': ['*'] },
   },
 };
 
